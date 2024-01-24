@@ -5,37 +5,47 @@
 }
 
 html {
-  font-family: "Roboto";
   font-size: 16px;
 }
 
 body {
   margin: 0;
+  font-family: "Roboto";
 }
 
 .container {
   width: 80%;
-  max-width: 710px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .intro {
   background-color: #23424a;
   color: white;
-  padding: 7em 0 7em 6em;
+  padding: 7em 0;
 }
 
-.intro-title {
-  font-size: 48px;
-  font-weight: 900;
-  margin-top: 0;
+.intro__text {
+  width: 60%;
+
+  & h1 {
+    font-size: 2.285rem;
+    font-weight: 900;
+    margin-top: 0;
+  }
+
+  & p {
+    margin-bottom: 3em;
+  }
 }
 
-.intro-btn-learn {
+.btn {
+  display: inline-block;
   font-weight: 700;
+  color: #23424a;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #38cfd9;
-  margin: 2.5em 0 0;
   padding: 1em 2em;
   border-radius: 100px;
 }
