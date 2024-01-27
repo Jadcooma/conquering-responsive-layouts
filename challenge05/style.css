@@ -28,9 +28,17 @@ img {
   max-width: 100%;
 }
 
+h1, h2 {
+  margin-top: 0;
+  font-weight: 900;
+}
+
 h1 {
   font-size: 3rem;
-  margin-top: 0;
+}
+
+h2 {
+  font-size: 2.25rem;
 }
 
 .container {
@@ -90,4 +98,33 @@ h1 {
 .btn:hover,
 .btn:focus {
   opacity: 0.75;
+}
+
+.service-description {
+  margin-top: 2em;
+}
+
+.service-description__process {
+  width: 62%;
+  padding-top: 2em;
+}
+
+.service-description__process h2 {
+  color: #136C72;
+}
+
+.service-description__selling-points {
+  width: 32%;
+  padding: 2em 1.5em;
+  color: white;
+  background-color: #136C72;
+  text-align: center;
+}
+
+.service-description__selling-points h2 ~ h2 {
+  margin-top: 2em;
+}
+
+.service-description p:last-of-type{
+  margin-bottom: 0;
 }
