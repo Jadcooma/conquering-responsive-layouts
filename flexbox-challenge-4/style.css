@@ -7,8 +7,17 @@
 *, *::before, *::after {box-sizing: border-box;}
 
 body {
+  font: 400 1rem "Roboto";
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+img {
+  border: 0;
 }
 
 .hero {
@@ -17,14 +26,19 @@ body {
   text-align: center;
 }
 
-h1, h2, h3 {
-  margin: 0;
-}
-
 .container {
   width: 80%;
   max-width: 1100px;
   margin-inline: auto;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+
+  & > * {
+    width: 46%;
+  }
 }
 
 .hero__title {
@@ -37,6 +51,38 @@ h1, h2, h3 {
   text-transform: uppercase;
   letter-spacing: .5em;
   color: var(--black-soft);
+  margin-bottom: .5rem;
+}
+
+.usp-block {
+  padding-block: 5rem;
+}
+
+.usp-one {
+  background-color: whitesmoke;
+}
+
+.usp-one .title {
+  color: var(--brown-custom);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.usp-one p {
+  margin-bottom: 1.5rem;
+}
+
+.usp-two {
+  background-color: var(--black-soft);
+}
+
+.usp-two__text .title,
+.usp-two__text p {
+  color: var(--beige-custom);
+}
+
+.usp-three {
+  background-color: var(--brown-custom);
 }
 
 .title {
