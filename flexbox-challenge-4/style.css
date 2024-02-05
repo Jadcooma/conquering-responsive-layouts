@@ -16,8 +16,10 @@ h1, h2, h3 {
   margin: 0;
 }
 
-img {
+.section-img {
   border: 0;
+  object-fit: scale-down;
+  object-position: top left;
 }
 
 .hero {
@@ -54,42 +56,40 @@ img {
   margin-bottom: .5rem;
 }
 
-.usp-block {
-  padding-block: 5rem;
+section {
+  padding-block: 4em;
 }
 
-.usp-one {
+.section-two {
   background-color: whitesmoke;
 }
 
-.usp-one .title {
+.section-two .title {
   color: var(--brown-custom);
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-.usp-one p {
+.section-two p {
   margin-bottom: 1.5rem;
 }
 
-.usp-two {
+.section-three {
+  color: white;
   background-color: var(--black-soft);
 }
 
-.usp-two__text .title,
-.usp-two__text p {
+.section-four {
   color: var(--beige-custom);
-}
-
-.usp-three {
   background-color: var(--brown-custom);
 }
 
 .title {
-  font: 900 1.714rem 'Playfair Display', sans-serif;
+  font: 900 1.714rem "Playfair Display", sans-serif;
 }
 
-@media (min-width: 768px) { /* tablet width */
+@media (min-width: 768px) {
+  /* tablet width */
   html {
     font-size: 21px;
   }
