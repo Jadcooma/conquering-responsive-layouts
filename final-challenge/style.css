@@ -5,5 +5,160 @@
 }
 
 body {
+  font-family: "Monserrat", sans-serif;
+  line-height: 1.5;
   margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  line-height: 1;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  opacity: 0.75;
+}
+
+.container {
+  width: min(80%, 1200px);
+  margin-inline: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.2em 1.2em;
+  border-radius: 100px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #a59678;
+}
+
+.title-accent {
+  color: #a59678;
+}
+
+section {
+  padding-block: 2.5em;
+}
+
+header {
+  background-color: #2e323f;
+  padding: 1em;
+}
+
+.nav__item {
+  margin-top: 0.25em;
+}
+
+.nav--header .nav__link {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav--header .nav__list {
+  font: 1.125rem "Oswald";
+  margin-top: 1em;
+  text-align: center;
+}
+
+.hero {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #3b4050;
+}
+
+.hero__title {
+  font-size: 5.625rem;
+}
+
+.section--two {
+  background-color: #f1f1f1;
+}
+
+.section__block {
+  text-align: center;
+}
+
+.section__block + .section__block {
+  margin-top: 2.5em;
+}
+
+.section__block > h3 {
+  font-size: 1.875rem;
+  color: #a59678;
+}
+
+.section__block > p {
+  font-size: 1.125rem;
+}
+
+.primary-content__title {
+  font-size: 2.25rem;
+  color: #a59678
+}
+
+.primary-content__text {
+  font-size: 1.3125rem;
+}
+
+.aside__block {
+  text-align: center;
+  background: #3b4050;
+  color: #fff;
+  padding: 2em;
+}
+
+.aside__block > h3 {
+  font-size: 2.25rem;
+  margin-bottom: .75em;
+}
+
+.aside__block + .aside__block {
+  margin-top: 2.5em;
+}
+
+footer {
+  background: #3b4050;
+  padding-block: 3em;
+}
+
+.footer__block {
+  margin-top: 3em;
+}
+
+.footer__title {
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 1.333em;
+}
+
+.footer__about h3,
+.footer__block h3 {
+  font-size: 1.3125rem;
+  color: #a59678;
+  margin-bottom: 1.25em;
+}
+
+.footer__about p,
+.nav--footer .nav__link {
+  color: #6f737f;
+}
+
+.nav--footer .nav__item {
+  margin-top: 1em;
 }
