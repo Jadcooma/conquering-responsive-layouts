@@ -28,14 +28,16 @@ a {
   text-decoration: none;
 }
 
-a:focus,
-a:hover {
+.nav-toggle:is(:focus, :hover),
+.nav__link:is(:focus, :hover),
+.btn:is(:focus, :hover) {
   opacity: 0.75;
 }
 
 .container {
   width: min(80%, 1200px);
   margin-inline: auto;
+  position: relative;
 }
 
 .btn {
@@ -45,7 +47,7 @@ a:hover {
   font-family: "Oswald";
   text-transform: uppercase;
   color: #fff;
-  background-color: #a59678;
+  background: #a59678;
 }
 
 .title-accent {
@@ -57,12 +59,64 @@ section {
 }
 
 header {
-  background-color: #2e323f;
-  padding: 1em;
+  background: #2e323f;
+  padding-block: 1em;
+  text-align: center;
+}
+
+.nav-toggle {
+  width: 3em;
+  height: 3em;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #3b4050;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity ease 0.2s;
+
+  position: absolute;
+  left: 0;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::after,
+.hamburger::before {
+  display: block;
+  margin-inline: auto;
+  height: 3px;
+  background: #fff;
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+  content: "";
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+  content: "";
 }
 
 .nav__item {
   margin-top: 0.25em;
+}
+
+.nav--header {
+  visibility: hidden;
+  position: absolute;
+  height: 0;
+}
+
+.nav-visible {
+  visibility: visible;
+  position: static;
+  height: auto;
 }
 
 .nav--header .nav__link {
@@ -73,13 +127,12 @@ header {
 .nav--header .nav__list {
   font: 1.125rem "Oswald";
   margin-top: 1em;
-  text-align: center;
 }
 
 .hero {
   font-size: 1.5rem;
   color: #fff;
-  background-color: #3b4050;
+  background: #3b4050;
 }
 
 .hero__title {
@@ -87,7 +140,7 @@ header {
 }
 
 .section--two {
-  background-color: #f1f1f1;
+  background: #f1f1f1;
 }
 
 .section__block {
@@ -109,7 +162,7 @@ header {
 
 .primary-content__title {
   font-size: 2.25rem;
-  color: #a59678
+  color: #a59678;
 }
 
 .primary-content__text {
@@ -125,7 +178,7 @@ header {
 
 .aside__block > h3 {
   font-size: 2.25rem;
-  margin-bottom: .75em;
+  margin-bottom: 0.75em;
 }
 
 .aside__block + .aside__block {
@@ -142,6 +195,7 @@ footer {
 }
 
 .footer__title {
+  color: #fff;
   font-size: 2.25rem;
   text-align: center;
   margin-bottom: 1.333em;
