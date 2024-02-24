@@ -1,3 +1,7 @@
+:root {
+  --nav-toggle-height: 3em;
+}
+
 *,
 *::before,
 *::after {
@@ -50,10 +54,6 @@ a {
   background: #a59678;
 }
 
-.title-accent {
-  color: #a59678;
-}
-
 section {
   padding-block: 2.5em;
 }
@@ -65,8 +65,8 @@ header {
 }
 
 .nav-toggle {
-  width: 3em;
-  height: 3em;
+  width: var(--nav-toggle-height);
+  height: var(--nav-toggle-height);
   padding: 0;
   border: none;
   border-radius: 50%;
@@ -103,8 +103,14 @@ header {
   content: "";
 }
 
-.nav__item {
-  margin-top: 0.25em;
+.home-link {
+  display: block;
+  height: var(--nav-toggle-height);
+}
+
+.logo {
+  display: block;
+  margin: auto;
 }
 
 .nav--header {
@@ -117,6 +123,10 @@ header {
   visibility: visible;
   position: static;
   height: auto;
+}
+
+.nav__item {
+  margin-top: 0.25em;
 }
 
 .nav--header .nav__link {
@@ -137,6 +147,10 @@ header {
 
 .hero__title {
   font-size: 5.625rem;
+}
+
+.hero__title__accent {
+  color: #a59678;
 }
 
 .section--two {
@@ -165,6 +179,12 @@ header {
   color: #a59678;
 }
 
+.primary-content__img {
+  width: 100%;
+  max-height: 292px;
+  margin-block: 1em;
+}
+
 .primary-content__text {
   font-size: 1.3125rem;
 }
@@ -173,7 +193,7 @@ header {
   text-align: center;
   background: #3b4050;
   color: #fff;
-  padding: 2em;
+  padding: 1.5em;
 }
 
 .aside__block > h3 {
@@ -181,7 +201,7 @@ header {
   margin-bottom: 0.75em;
 }
 
-.aside__block + .aside__block {
+.aside__block {
   margin-top: 2.5em;
 }
 
@@ -215,4 +235,66 @@ footer {
 
 .nav--footer .nav__item {
   margin-top: 1em;
+}
+
+@media (min-width: 700px) {
+  .row-md {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav--header {
+    visibility: visible;
+    height: auto;
+    position: relative;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav--header .nav__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 2em;
+    gap: 2.5em;
+  }
+
+  .nav--header .nav__item {
+    margin: 0;
+  }
+
+  .primary-content__img {
+    object-fit: cover;
+  }
+  
+  .aside {
+    display: flex;
+    gap: 1em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .row-lg {
+    display: flex;
+  }
+
+  .hero__title__accent {
+    display: block;
+  }
+
+  .section__block + .section__block {
+    margin: 0 0 0 1em;
+  }
+
+  .footer__main {
+    margin-top: 3em;
+  }
+
+  .footer__block {
+    margin: 0 0 0 5em;
+  }
 }

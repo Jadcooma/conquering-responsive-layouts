@@ -15,12 +15,12 @@
   </head>
   <body>
     <header>
-      <div class="container row">
+      <div class="container row-md">
         <button id="nav--header-toggle" class="nav-toggle" aria-label="toggle navigation">
           <span class="hamburger"></span>
         </button>
-        <a href="#" class="logo">
-          <img src="img/logo.svg" alt="CRL logo"/>
+        <a class="home-link" href="#">
+          <img class="logo" src="img/logo.svg" alt="CRL logo"/>
         </a>
         <nav class="nav--header" aria-labelledby="nav--header-toggle">
           <ul class="nav__list">
@@ -30,7 +30,7 @@
           </ul>
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="#">Sign in</a></li>
-            <li class="nav__item"><a class="nav__link btn" href="#">Sign out</a></li>
+            <li class="nav__item"><a class="nav__link btn" href="#">Sign up</a></li>
           </ul>
         </nav>
       </div>
@@ -38,13 +38,13 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Responsive layouts <span class="title-accent">don’t have to be a struggle</span></h1>
+          <h1 class="hero__title">Responsive layouts <span class="hero__title__accent">don’t have to be a struggle</span></h1>
           <p class="hero__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis similique ipsam alias, ipsum cupiditate et molestias voluptate earum nemo?</p>
           <a class="btn" href="#">I want to learn</a>
         </div>
       </section>
       <section class="section--two">
-        <div class="container">
+        <div class="container row-lg">
           <div class="section__block">
             <h3>Mobile-first</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ad eum velit error earum nemo harum fugit explicabo laudantium? Quibusdam.</p>
@@ -64,7 +64,7 @@
           <div class="primary-content">
             <h2 class="primary-content__title">It doesn’t have to be so hard</h2>
             <p class="primary-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque exercitationem qui quae mollitia natus reiciendis fuga, soluta esse ut ea voluptates minima quos similique a impedit? Culpa aliquid aperiam repudiandae.</p>
-            <img src="img/layout-img.jpg" alt="sketches of layouts" class="section__img">
+            <img class="primary-content__img" src="img/layout-img.jpg" alt="sketches of layouts">
             <p class="primary-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, modi eveniet cum illo voluptatem qui animi omnis numquam debitis minus necessitatibus molestias facere corporis, veniam, accusantium ea blanditiis est. Voluptas.</p>
           </div>
           <aside class="aside">
@@ -87,41 +87,43 @@
     <footer>
       <div class="container">
         <h2 class="footer__title">Just scratching the surface</h2>
-        <div class="footer__about">
-          <h3>About our company</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugit assumenda a doloribus sed fuga, commodi reprehenderit voluptates explicabo enim.</p>
-        </div>
-        <div class="footer__block">
-          <h3>Getting around</h3>
-          <nav class="nav--footer">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__block">
-          <h3>Other things</h3>
-          <nav class="nav--footer">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#" class="nav__link">Lorem ipsum</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">dolor</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">sit amet</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">consectetur</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__block">
-          <h3>And more</h3>
-          <nav class="nav--footer">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#" class="nav__link">Lorem ipsum</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">dolor</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">sit amet</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">consectetur</a></li>
-            </ul>
-          </nav>
+        <div class="footer__main row-lg">
+          <div class="footer__about">
+            <h3>About our company</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugit assumenda a doloribus sed fuga, commodi reprehenderit voluptates explicabo enim.</p>
+          </div>
+          <div class="footer__block">
+            <h3>Getting around</h3>
+            <nav class="nav--footer">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__block">
+            <h3>Other things</h3>
+            <nav class="nav--footer">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Lorem ipsum</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">dolor</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">sit amet</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">consectetur</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__block">
+            <h3>And more</h3>
+            <nav class="nav--footer">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Lorem ipsum</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">dolor</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">sit amet</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">consectetur</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </footer>
